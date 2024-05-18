@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <style>
+        .searchContainer {
+            display: inline;
+            float: left;
+            width: 40%;
+        }
+        .item {
+            width: 42%;
+            margin: 3%;
+            padding: 3px;
+            border: 3px solid black;
+            overflow: hidden;
+            float: left;
+        }
+        .item .name {
+            float: left;
+        }
+        .item .price {
+            float: right;
+        }
+        .item input[type=submit] {
+            position: relative;
+            left: 10%;
+        }
+        .item .rating {
+            left: 0%;
+        }
+        .item .infomation {
+            display: none;
+        }
+        .item:hover .infomation {
+            display: block;
+        }
+        .item .dietry {
+            display: none;
+        }
+        .item:hover .dietry {
+            display: block;
+        }
+        .item:hover input[type=submit] {
+            position: relative;
+            left: 60%;
+        }
+    </style>
+</head>
+<body>
+<div class='searchContainer'>
+<?main>
+<div class='item'>
+    <p class='name'><b>?</b></p>
+    <p class='price'>$?</p></br>?
+    <div class='infomation'>
+        </br></br>
+        <p class='description'>?</p>
+    </div>
+    <div class='dietry'>
+        <p class='rating'>rating: ?/5</p>
+        <p>Vegan<input type='checkbox' ?>Vegeterian<input type='checkbox' ?>GlutenFree<input type='checkbox' ?></p>
+    </div>
+    <form action='index.php' method='POST'>
+        <input hidden='true' name='ID' value='?'>
+        <input type='submit' ?>
+    </form>
+</div>
+<?main>
+</div>
+</body>
+</html>

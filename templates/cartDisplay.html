@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <style>
+      body {
+          float: right;
+          width: 30%;
+      }
+      td {
+          border-bottom: 2px dotted black;
+      }
+      td, th {
+          text-align: left;
+      }
+      tr:nth-last-child(2)
+      {
+          border-spacing:0 30px;
+      }
+      table {
+          width:90%;
+      }
+      #restartCart {
+          margin-top: 5%;
+          float: right;
+      }
+      #BuyItems {
+          margin-top: 5%;
+          margin-right: 90%;
+          margin-bottom: 5%;
+          float: left;
+      }
+    </style>
+</head>
+<body>
+<table>
+<?head>
+<tr>
+    <th>Edit</th>
+    <th>Item</th>
+    <th>Price</th>
+    <th>Quantity</th>
+</tr>
+<?head>
+
+
+<?main1>
+<tr>
+    <td>
+        <?main1>
+
+
+        <?main2>
+        <form method='POST' action='index.php'>
+            <input hidden='true' name='ID' value='?'>
+            <input type='submit' name='operation' value='+'>
+            <input type='submit' name='operation' value='-'>
+        </form>
+        <?main2>
+
+
+        <?main3>
+    </td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+</tr>
+<?main3>
+
+
+<?foot>
+<tr>
+    <td></td>
+    <td></td>
+    <td></br></br>?</td>
+    <td></br></br>?</td>
+</tr>
+<?foot>
+
+
+<?cartPayment>
+<tr>
+    <td></td>
+    <td><b>GST<b></td>
+    <td>$?&lt;included&gt;</td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td><b>Service fee<b></td>
+    <td>?</td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td><b>Member discount<b></td>
+    <td>?%</td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td><b>NET total Price<b></td>
+    <td>$?</td>
+    <td></td>
+</tr>
+<div class='payButton'>
+    <form method='POST' action='order.php'>
+        <input hidden name='payed' value='?'>
+        <input hidden name='delivery' value='?'>
+        <label>Notes: </label><br>
+        <textarea name='notes' rows='2' cols='50'></textarea>
+        <input type='submit' value='Pay'>
+    </form>
+</div>
+<?cartPayment>
+</table>
+</body>
+</html>

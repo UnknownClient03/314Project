@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <style>
+        .order {
+            float: left;
+            width: 25%;
+            padding-bottom: 5%;
+        }
+        #displayReceipt {
+            float: left;
+            width: 75%;
+        }
+
+        .leftHeader {
+            float: left;
+            width: 30%;
+            font-size: 12px;
+        }
+
+        .rightHeader {
+            float: right;
+            width: 30%;
+            font-size: 12px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: 12px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class='order'>
+<?head>
+<div id='displayReceipt'>
+  <input type='submit' value='Show Receipt' onclick='displayReview("receiptContainer?")'>
+  <div hidden id='receiptContainer?'>
+    <div class='leftHeader'>
+      From Address: ?<br>
+      ABN: ?<br>
+      To Address: ?<br>
+    </div>
+    <div class='rightHeader'>
+      OrderID: ?<br>
+      Order Date: ?<br>
+    </div>
+    <table>
+      <tr>
+        <th>Quantity</th>
+        <th>Description</th>
+        <th>Unit Price</th>
+        <th>Amount</th>
+      <tr>
+<?head>
+
+
+<?body>
+      <tr><td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td></tr>
+<?body>
+
+
+<?foot>
+      <tr><td><td><th>ItemCost</th><td>?</td></tr>
+      <tr><td><td><th>GST</th><td>?</td></tr>
+      <tr><td><td><th>DeliveryCost</th><td>?</td></tr>
+      <tr><td><td><th>Discount</th><td>?</td></tr>
+      <tr><td><td><th>Total</th><td>?</td></tr>
+    </table>
+  </div>
+</div>
+<?foot>
+</div>
+<script>
+    function displayReview(id) {
+        var container = document.getElementById(id);
+        if (container.hidden == false) container.hidden = true;
+        else container.hidden = false;
+    }
+</script>
+</body>
+</html>
