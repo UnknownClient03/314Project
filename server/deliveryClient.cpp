@@ -1,6 +1,9 @@
 #include "client.h"
 
 static int ID = -1;
+static int port = 60000;
+static const char address[] = "127.0.0.1";
+
 
 void formatsOrderContition(CustomClient* c)
 {
@@ -77,8 +80,7 @@ void formatsOrderContition(CustomClient* c)
 int main()
 {
     CustomClient c;
-    c.Connect("10.12.131.181", 60000);  //private network
-    //c.Connect("127.0.0.1", 60000);    //localhost
+    c.Connect(address, port);
 
     bool key[3] = { false, false, false };
     bool old_key[3] = { false, false, false };
