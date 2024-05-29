@@ -1,5 +1,0 @@
-locally			php -S localhost:8000 -t C:\Users\unkno\Desktop\2024\CSIT314\project
-		login-	http://localhost:8000/index.php
-private network		php -S 0.0.0.0:8000 -t C:\Users\unkno\Desktop\2024\CSIT314\project
-		login-	http://192.168.0.245:8000/index.php
-public network		
