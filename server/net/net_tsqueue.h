@@ -67,7 +67,7 @@ namespace olc
 				std::scoped_lock lock(muxQueue);
 				auto t = std::move(deqQueue.back());
 				deqQueue.pop_back();
-				return T;
+				return t;
 			}
 			void wait()
 			{
