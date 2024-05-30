@@ -683,7 +683,7 @@
 
                 $orderID = $obj["orderID"];
                 $itemCost = number_format($obj["itemCost"], 2);
-                $GST = number_format($itemCost / 10);
+                $GST = number_format($itemCost / 10, 2);
                 $deliveryCost = number_format($obj["deliveryCost"], 2);
                 $discount = $obj["discount"];
                 $Grosstotal = number_format(($obj["itemCost"] + $obj["deliveryCost"]) * (1-$obj["discount"]), 2);
