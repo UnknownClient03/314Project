@@ -597,7 +597,7 @@
                 try {
                     if($objA = sqlsrv_fetch_array($stmtA, SQLSRV_FETCH_ASSOC))
                     {
-                        $address = $objA['Country'].", ".$objA['City'].", ".$objA['Street'].", ".$objA['Street'];
+                        $address = $objA['Country'].", ".$objA['City'].", ".$objA['StreetNumber'].", ".$objA['Street'];
                         if($objA['unit'] != '') $address = $address.", ".$objA['unit'];
                         $address = $address.", ".$objA['postcode'];
                         $resturantName = $objA['name'];
